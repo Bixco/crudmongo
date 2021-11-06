@@ -1,0 +1,29 @@
+###
+POST http://localhost:900/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "vicente",
+    "age": 83,
+    "email": "vbc@gmail.com"
+}
+
+###
+GET http://localhost:900/api/users HTTP/1.1
+
+###
+GET http://localhost:900/api/users/61860fb0f7d213c46d29a7ab HTTP/1.1
+
+###
+PUT http://localhost:900/api/users/61860fb0f7d213c46d29a7ab HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "juan carlos",
+    "age": 32,
+    "email": "jcm@gmail.com"
+}
+
+
+###
+DELETE http://localhost:900/api/users/61861032f7d213c46d29a7ad HTTP/1.1
